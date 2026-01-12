@@ -36,12 +36,10 @@
 .landingPage__skullImg {
     opacity: 0;
     transform: translateY(-40px);
-    width: 50vw;
     aspect-ratio: auto;
-    max-width: 1024px;
     width: clamp(320px, 50vw, 1024px);
     position: absolute;
-    top: -45vh;
+    top: -20vw;
     right: 0px;
     z-index: 1;
     animation: driftIn 1.25s ease forwards;
@@ -63,9 +61,23 @@
         scroll-margin-top: 86px;
     }
 
+    .landingPage__skullImgWrapper {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+    }
+
     .landingPage__skullImg {
-        top: -15%;
-        left: 25%;
+        opacity: 0;
+        transform: translateY(-40px);
+        aspect-ratio: auto;
+        width: clamp(420px, 50vw, 1024px);
+        position: relative;
+        top: -10vw;
+        right: 0px;
+        z-index: 1;
+        animation: driftIn 1.25s ease forwards;
     }
 
     .landingPage__titleFigure {
@@ -75,33 +87,5 @@
 
     .landingPage__titleWrapper {
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .landingPage__skullImg {
-        top: -20%;
-        left: 16.5%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .landingPage__skullImg {
-        top: -20%;
-        left: 14.5%;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .landingPage__skullImg {
-        top: -20%;
-        left: 8.5%;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .landingPage__skullImg {
-        top: -20%;
-        left: 3.5%;
     }
 }
